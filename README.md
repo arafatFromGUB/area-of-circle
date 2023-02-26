@@ -1,19 +1,18 @@
-# area-of-circle
+!! area-of-circle--- its like a real life problem : to calculate any circle's area
 
-import java.util.Scanner;
+#include <stdio.h>
 
-public class Main {
-    public static void main(String[] args){
-    
-    
-        double R,A;
-        
-        Scanner sc = new Scanner(System.in);
-        
-        R = sc.nextDouble();
-        
-        A = 3.14159 * R * R;
-        
-        System.out.printf("A=%.4f\n",  A);
-   }
+int main()
+{
+  float radius, area;
+
+  printf("Enter the radius of a circle\n");
+
+  scanf("%f", &radius);
+
+  area = 3.14159*radius*radius;
+
+  printf("Area of the circle = %.2f\n", area); 
+
+  return 0;
 }
